@@ -13,3 +13,5 @@ if settings.DEBUG:
 from django.conf import settings
 from django.conf.urls.static import static
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+4. En la view correspondiente se debe agregar el contexto que permita mostrar en el html la imagen.
