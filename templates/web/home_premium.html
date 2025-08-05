@@ -7,27 +7,11 @@
     <title>Document</title>
     {% include 'web/componentes/scripts.html' %}
 </head>
-
-
 <body class="d-flex flex-column min-vh-100">
     {% include 'web/componentes/head.html' %}
-
     <main class="flex-grow-1">
         <h1>HOME</h1>
-        {% for flan in flanes %}
-        <ul>
-            <li>{{flan.nombre}}</li>
-            <img src="{{flan.imagen.url}}" alt="aqui hay un flan">
-            <li>{{flan.descripcion}}</li>
-            <li>{{flan.precio}}</li>
-            <li>{{flan.stock}}</li>
-        </ul>
-            
-        {% endfor %}
     </main>
-
     {% include 'web/componentes/foot.html' %}
 </body>
-
-
 </html>
